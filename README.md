@@ -1,10 +1,6 @@
-Project-1-Map_Reduce
+Map_Reduce
 
 Name = **Muhammad Abrar Tariq**
-
-UIN = **657401195**
-
-Email = **mtariq5@uic.edu**
 
 ### Link Demonstrating deployment **[Video](https://drive.google.com/drive/folders/1QsBj7ddcb8OfHoBfcEoSnL646vOoiVy-?usp=sharing)**
 
@@ -12,7 +8,7 @@ Email = **mtariq5@uic.edu**
 
 * Cloning the Project -
  
-```git clone https://github.com/abrar-tariq/CS-441-Project-1.git```
+```git clone https://github.com/abrartariq/Scala-MapReduce.git```
 
 
 
@@ -31,13 +27,13 @@ Email = **mtariq5@uic.edu**
       
       
 #### Intro
-This homework involves demonstration of hadoop framework to perform map reduce tasks using distributive computing. 
+This project involves demonstration of hadoop framework to perform map reduce tasks using distributive computing. 
 All the tasks that belong to this homework are focused on extracting meaningful data from log messages. These log messages 
 are generated using a Random message generator script. The whole idea of this project is to read tons of data full of log messages, 
 filter the log messages that match a particular pattern and then give various insight into this data by outputting a concise CSV data format output.
 More details about implementation, data semantics and deployment are given in later sections of this documentation.
 
-#### Task 1 : Time Constraint Distribution of Messages.
+#### Job 1 : Time Constraint Distribution of Messages.
 
 This task's input will be start time and end time in format "HH:mm:ss.SSS".
 If any log message having time within this range will be matched with string pattern.
@@ -60,7 +56,7 @@ WARN,2524
 This means there are 1379 log message with debug level whose string message matched a particular pattern. 
 The same goes for other levels as well.
 
-#### Task 2 : Interval Grouping with Max Count.
+#### Job 2 : Interval Grouping with Max Count.
 This task's input will be a time interval in seconds (provided from config file). 
 This task calculates the number of "ERROR" level log message for each fixed time interval in log messages in descending order.
 
@@ -83,7 +79,7 @@ The above is calculated for time interval 1 minute by specifying it in config fi
 The first entry says that between 02:24:00 and 02:25:00 timestamps, there are 38 error messages found.
 It can be seen that it is in descending order of number of error messages.
 
-#### Task 3 : Total Count of Messages.
+#### Job 3 : Total Count of Messages.
 
 This Task is spliting image of Task 1 where rather that filtering record based on interval we Look at full log.
 
@@ -101,7 +97,7 @@ WARN,3402
 ```
 This sample output represents that total of 1854 debug level messages are found in all input logs. The same goes for other log levels.
 
-#### Task  4: Messages Group by Highest Number of Characters.
+#### Job  4: Messages Group by Highest Number of Characters.
 
 This task computes the length of log message which has maximum character length of the matched string message with the string pattern for each log type.
 
